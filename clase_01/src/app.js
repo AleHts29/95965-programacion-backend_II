@@ -21,6 +21,18 @@ app.listen(PORT, () => {
 })
 
 
+let num1 = 5;
+let num2 = 10;
+let suma = num1 + num2;
+console.log("HOLA COMO ESTAS");
+console.log("La suma es:", suma);
+
+// objeto proceess
+console.log("Process ID:", process.pid);
+
+
+
+
 // DB Connection
 const MONGO_URI = "mongodb://localhost:27017/clase_01?retryWrites=true&w=majority"; // Replace with your MongoDB connection string
 const connectMongoDB = async () => {
