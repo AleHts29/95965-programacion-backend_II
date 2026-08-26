@@ -15,9 +15,7 @@ const mongoInstance = async () => {
 }
 
 
-// Selector
-
-
+// Factory - Selector
 switch (config.persistence) {
     case 'mongodb':
         mongoInstance() // Initialize MongoDB connection
@@ -36,6 +34,9 @@ switch (config.persistence) {
         studentService = new StudentFileDAO();
         coursesService = new CoursesFileDAO();
         break;
+
+    // case 'sql':
+
 }
 
 
